@@ -12,6 +12,7 @@ public with sharing class CheckForEmailAttachmentHandler {
   public static Map<String, List<ContentVersion>> allEmailMessagesWithContentVersions = new Map<String, List<ContentVersion>>();
   public static Map<String, ContentVersion> allCasesWithContentVersions = new Map<String, ContentVersion>();
   public static Map<Id, EmailMessage> incomingEmailMessagesMap = new Map<Id, EmailMessage>();
+  private final static List<String> allowedFields = new List<String>();
 
   /**
    * @description It will get all email messages with attachment converted into content version
