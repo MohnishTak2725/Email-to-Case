@@ -1,5 +1,5 @@
 # Unique name for this workflow
-name: Deploy main branch to developer org
+name: Deploy main branch to developer edition org
 
 # Definition when the workflow should run
 on:
