@@ -3,8 +3,8 @@
  */
 trigger CheckForEmailAttachment on Attachment(after insert) {
   CheckForEmailAttachmentHandler.TriggerVariablesWrapper checkForEmailAttachmentWrap = new CheckForEmailAttachmentHandler.TriggerVariablesWrapper();
-  checkForEmailAttachmentWrap.afterTrigger = Trigger.isAfter;
-  checkForEmailAttachmentWrap.insertTrigger = Trigger.isInsert;
+  checkForEmailAttachmentWrap.isAfter = Trigger.isAfter;
+  checkForEmailAttachmentWrap.isInsert = Trigger.isInsert;
   checkForEmailAttachmentWrap.emailAttachments = Trigger.new;
   CheckForEmailAttachmentHandler.getAttachmentUploadedInContentVersionForPDFFileType(checkForEmailAttachmentWrap);
 }
