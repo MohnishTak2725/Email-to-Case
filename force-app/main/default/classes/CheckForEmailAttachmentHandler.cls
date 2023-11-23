@@ -43,7 +43,7 @@ public with sharing class CheckForEmailAttachmentHandler {
         // Check if there are attachments from incoming email messages
         if (incomingEmailMessagesMap.size() > 0) {
           String emailMessagePrefix = Schema.SObjectType.EmailMessage.getKeyPrefix();
-          for (Attachment attachment : emailAttachments) {
+          for (Attachment attachment : checkForEmailAttachmentWrap.emailAttachments) {
             String parentId = attachment.ParentId;
             if (
               parentId.startsWith(emailMessagePrefix) &&
