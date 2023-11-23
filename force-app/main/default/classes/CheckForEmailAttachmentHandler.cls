@@ -123,8 +123,8 @@ public with sharing class CheckForEmailAttachmentHandler {
   }
 
   public class TriggerVariablesWrapper {
-    public Boolean afterTrigger;
-    public Boolean insertTrigger;
+    public Boolean isAfter;
+    public Boolean isInsert;
     public List<Attachment> emailAttachments;
   }
 }
