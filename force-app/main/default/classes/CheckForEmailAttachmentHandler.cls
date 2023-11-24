@@ -2,7 +2,7 @@
  * @description It will handles operations for trigger over attachment
  */
 public with sharing class CheckForEmailAttachmentHandler {
-  // Demo comment
+  // Demo comment added today
   public static Set<String> allContentVersionIds = new Set<String>();
   public static Set<String> allEmailMessageIds = new Set<String>();
 
